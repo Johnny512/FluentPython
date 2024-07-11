@@ -1,5 +1,6 @@
 import collections
-from random import choice
+import secrets
+
 Card = collections.namedtuple("Card", ["rank", "suit"])
 
 
@@ -31,9 +32,9 @@ print(len(deckOfCards))
 print(deckOfCards[0])
 print(deckOfCards[-1])
 print("Using Choice from Random")
-print(choice(deckOfCards))
-print(choice(deckOfCards))
-print(choice(deckOfCards))
+print(secrets.choice(deckOfCards))
+print(secrets.choice(deckOfCards))
+print(secrets.choice(deckOfCards))
 print("Using slicing like deckOfCards[:3]")
 print(deckOfCards[:3])
 print(deckOfCards[12::13])
