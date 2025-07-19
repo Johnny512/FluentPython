@@ -1,3 +1,14 @@
+'''
+This module defines a simple model for a standard French deck of playing cards.
+
+Classes:
+    FrenchDeck: Represents a standard 52-card French deck, supporting typical sequence operations.
+
+NamedTuples:
+    Card: Represents a single playing card with a rank and suit.
+
+Example usage:'''
+
 import collections
 from random import choice
 
@@ -15,10 +26,10 @@ class FrenchDeck:
     def __init__(self) -> None:
         self._cards = [Card(rank, suit) for suit in self.suits for rank in self.ranks]
 
-    def __len__(self) -> None:
+    def __len__(self) -> int:
         return len(self._cards)
 
-    def __getitem__(self, position) -> None:
+    def __getitem__(self, position) -> Card:
         return self._cards[position]
 
     def __repr__(self) -> str:
@@ -50,4 +61,5 @@ print(deckOfCards[12::13])
 print("Does a golf club 9 iron exist in the card deck?")
 print(golfClub in deckOfCards)
 print(beerCard in deckOfCards)
-print(deckOfCards)
+print("Deck of Cards:")
+print(deckOfCards.get_cards())

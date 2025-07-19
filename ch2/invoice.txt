@@ -1,0 +1,5 @@
+1234  Description of item 1              $10.00  5   $50.00
+7890  Description of item 2               $2.00  10  $200.00
+3456  Description of item 3              $30.00  15  $450.00
+9012  Description of item 4              $40.00  20  $800.00
+5678  Description of item 5              $50.00  25  $1250.00
